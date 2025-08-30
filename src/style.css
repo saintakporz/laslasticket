@@ -45,6 +45,17 @@ Background-color: black;
 .help{
   margin-right: 6px;
 }
+.help-con{
+
+  float: right;
+
+  margin-right: 12px;
+
+  font-size: 1.8em;
+
+  color: #fff;
+
+}
 section {
     /* display: none; *
     margin-top: 0;*/
@@ -713,4 +724,5 @@ iframe{
     border-radius: 2px;
 
   }
+
 
