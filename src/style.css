@@ -68,7 +68,7 @@ section {
     padding: 50px 0;
 }
 .swiper-container {
-    /* margin: 0 30px; */
+     margin: 0 30px; 
      padding: 0 4px;
      overflow: visible;
     /* overflow: hidden; */
@@ -744,6 +744,7 @@ iframe{
   font-size: 18px;  /* make icon size similar */
   cursor: pointer;  /* show it's clickable */
 }
+
 
 
 
