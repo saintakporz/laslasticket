@@ -724,5 +724,25 @@ iframe{
     border-radius: 2px;
 
   }
+.name {
+  display: flex;
+  justify-content: space-between; /* pushes text left, icon right */
+  align-items: center;            /* vertically aligns both */
+  background: #0560C9;            /* same blue background */
+  color: #fff;                    /* white text */
+  padding: 8px 12px;              /* spacing like in screenshot */
+  border-radius: 6px 6px 0 0;     /* rounded top corners if needed */
+}
+
+.header-output {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.help-con {
+  font-size: 18px;  /* make icon size similar */
+  cursor: pointer;  /* show it's clickable */
+}
 
 
