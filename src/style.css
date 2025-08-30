@@ -70,8 +70,8 @@ section {
 .swiper-container {
     /* margin: 0 30px; */
      padding: 0 4px;
-     overflow: visible;
-    /* overflow: hidden; */
+   /*  overflow: visible;*/
+     overflow: hidden; 
 }
 .swiper-wrapper {
      display: flex;
@@ -100,7 +100,7 @@ section {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   border-bottom: 2px solid #026BE0;
   height: auto;
-  width: 80%; 
+  width: 100%; 
 }
 
 .card .wrapper {
@@ -744,6 +744,7 @@ iframe{
   font-size: 18px;  /* make icon size similar */
   cursor: pointer;  /* show it's clickable */
 }
+
 
 
 
