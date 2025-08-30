@@ -663,7 +663,7 @@ margin: 14px;
     .wrapper .seat-row-sec {
         padding: 18px 0;
     }
-
+    }
 .map{
   margin: 16px;
 }
@@ -706,4 +706,5 @@ iframe{
     height: 4px;
     background-color: white;
     border-radius: 2px;
+
   }
