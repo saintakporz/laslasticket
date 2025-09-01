@@ -9,7 +9,7 @@
 
 body {
  /*   overflow: hidden;*/
-   /* min-height: 100vh;*/
+   min-height: 100%;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     background: #fafafa;
@@ -966,7 +966,7 @@ section {
 }
 iframe{
   border-radius: 8px;
-  height: 200px;
+  height: 300px;
 }
 
 
@@ -1056,5 +1056,6 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
