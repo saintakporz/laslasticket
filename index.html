@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="theme-color" content="#1B1F22">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title" content="Ticketmaster">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="apple-touch-icon" href="image/ticket.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <title>My Ticket</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="heading-for-ticket">
+            <div class="icon"><i class='bx bx-x close'></i></div>
+            <div><h1>My Tickets</h1></div>
+
+            <div class="help"><h1>Help</h1></div>
+
+
+
+        </div>
+
+
+
+    </header>
+
+<div class="up">
+  <div class="up-btn">MY TICKETS  <span class="ticket-count2">0</span>
+</div> 
+  <div class="up-btn up2">ADD-ONS</div>
+</div>
+
+    <section> 
+        <div class="swiper">
+
+  <!-- Additional required wrapper -->
+
+            <div class="swiper-container">
+
+                
+
+            <div class="swiper-wrapper">
+
+            <!-- Slides -->
+
+
+
+            <div class="card swiper-slide">
+
+                <div class="wrapper">
+<div class="iconarea">
+    <div></div>
+    <p class="name header-output">Taylor Swift</p>
+     <div class="help-icon">
+    <i class="bx bx-info-circle"></i>
+  </div>
+
+</div>
+                    
+
+                    <div class="seat-row-sec">
+
+                        <p>
+
+                            <span class="sec">SEC</span>
+
+                            <span class="sec-seat sec-output">3</span>
+
+                        </p>
+
+                        <p>
+
+                            <span class="row">ROW</span>
+
+                            <span class="seat-row row-output">H</span>
+
+                        </p>
+
+                        <p>
+
+                            <span class="seat">SEAT</span>
+
+                            <span class="seat-num seat-output">2</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="image-wrapper">
+
+                    <img src="image/Dog.jpg" alt="Image" width="100%" height="150px" class="image-output">
+
+                    <span class="overlays"></span>
+
+                    <div class="ticket-name-date">
+
+                        <p class="ticket-name image-title-output">Taylor Swift | The Eras Tour</p>
+
+                        <p class="ticket-date"><span class="time-output">Sun &#x2022; July 23 &#x2022; 6:30 PM</span> <span>&#x2022;</span> <span class="location-output">Lumen Field, - Seattle, WA</span></p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <p class="gate"><span class="gate-output">LEFT FIELD</span></p>
+
+                <br>
+
+                
+
+                <div class="apple-wallet">
+
+                    <img src="image/scan.png" alt="wallet">
+
+                    <span class="add-2-wallet">View Ticket</span>
+
+                </div>
+
+                <div class="view-details">
+
+                    <a href="#" class="card-link">Ticket Details</a>
+
+                </div>
+
+
+
+            </div>
+
+            </div>
+
+            </div>
+
+        
+
+            <!-- If we need pagination -->
+
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+
+            <div class="swiper-button-prev swiper-navBtn"></div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+
+        
+
+            <!-- If we need scrollbar -->
+
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+
+        <div class="transfer-sell">
+
+            <a class="transfer" href="#">Transfer</a>
+
+            <a class="sell" href="#">Sell</a>
+
+        </div>
+
+
+
+  <div class="map">
+
+<iframe id="mapIframe"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019514980186!2d-122.4194154846838!3d37.77492977975995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818cba86ffb1%3A0x4f4f0c1b1aa0b3f4!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1616623681234!5m2!1sen!2sus" 
+  width="100%" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+    </section>
+
+
+
+    <div class="form-container"  id="popUp">
+
+        <form id="form">
+
+            <label for="secInput">Sec</label>
+
+            <input type="text" id="secInput" name="sec" placeholder="Sec">
+
+
+
+            <label for="rowInput">Row</label>
+
+            <input type="text" id="rowInput" name="row" placeholder="Row">
+
+            
+
+            <label for="seatInput">Seat</label>
+
+            <input type="text" id="seatInput" placeholder="Seat">
+
+            
+
+                    <label for="headerInput">Header</label>
+
+            <input type="text" id="headerInput" placeholder="e.g Standard Ticket">
+
+            
+
+                    <label for="numInput">Number of tickets</label>
+
+            <input type="tel" id="numInput" placeholder="e.g 5 and above" min="1" required>
+
+            
+
+                    <label for="imgUrlInput">image url</label>
+
+            <input type="text" id="imgUrlInput" placeholder="image url">
+
+            
+
+                        <label for="gateInput">Gate</label>
+
+            <input type="text" id="gateInput" placeholder="Gate">
+
+                        <label for="imgTitleInput">image title</label>
+
+            <input type="text" id="imgTitleInput" placeholder="title of event">
+
+            
+
+                        <label for="timeInput">Time and Date</label>
+
+            <input type="text" id="timeInput" placeholder="e g Mon, Aug 15, 8:00PM">
+
+            
+
+                        <label for="locationInput">Location</label>
+
+            <input type="text" id="locationInput" placeholder="Location">
+
+            
+
+            <input type="submit" value="Submit Form">
+
+        </form>
+
+    </div>
+
+    <div class="transfer1">
+
+        <div class="wrappers">
+
+
+
+        <p class="heading">select tickets to transfer</p>
+
+
+
+        <p class="info">
+
+            <i class='bx bx-info-circle'></i>
+
+            <span>Only transfer tickets to people you know and trust to ensure everyone stays safe and socially distanced.</span>
+
+        </p>
+
+        <div class="row">
+
+            <ul class="first-child">
+
+                <li>
+
+                    <span>Sec</span>
+
+                    <span class="sub-sec-output">3</span>
+
+                    <span>,</span>
+
+                </li>
+
+                <li>
+
+                    <span>Row</span>
+
+                    <span class="sub-row-output">H</span>
+
+                </li>
+
+            </ul>
+
+            <ul class="last-child">
+
+                <li>
+
+                    <img src="image/ticketicon.png" alt="ticket icon" width="20" height="20">
+
+                    <span class="ticket-count">0</span>
+
+                    <span>tickets</span>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="card-wrappers">
+
+            
+
+        </div>
+
+        <div class="selected-tf">
+
+            <p class="select">
+
+                <span class="selected">0</span>
+
+                <span>Selected</span>
+
+            </p>
+
+            <p class="trans"> 
+
+                <a class="transfer-link">
+
+                    <span>Transfer TO</span>
+
+                    <i class='bx bx-chevron-right'></i>
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="parent">
+
+        <div class="manual-page">
+
+            <div class="manual-transfer">
+
+              <div class="manual-heading">TRANSFER TO</div>
+
+              <div class="manual-btn">
+
+                 <button class="contact-button">
+
+                <span class="button-text">Select from contacts
+
+                    <i class='bx bxs-contact'></i>
+
+                </span>
+
+              </button>
+
+              <button class="manual-button">
+
+                <span class="button-text">Manually enter a recipient
+
+                    <i class='bx bx-plus-circle' ></i>
+
+                </span>
+
+              </button>
+
+              </div>
+
+             <div class="tf-ticket">
+
+                   <img src="image/send-icon.png" alt="" width="100">
+
+              <div class="tick-header">Transfer Ticket via Email or Text Message</div>
+
+              <p class="tick-paragraph">Select an email or mobile number to transfer
+
+              tickets to your recipent.</p>
+
+             </div>
+
+          
+
+          
+
+            </div>
+
+               <div class="manual-buttons">
+
+               <a href="#" class="transfer-btns">< BACK</a>
+
+             </div>
+
+          </div>
+
+    </div>
+
+    <div class="new-wrapper">
+
+        <div class="transfer-manually">
+
+            <div class="manually-header">
+
+              <h1>Transfer Tickets</h1>
+
+              </div>
+
+          <div class="manually-container">
+
+                  <h2><span class="manual-ticket-count">0</span> Tickets Selected</h2>
+
+              <h2 class="manual-counts">Sec <span class="manual-sec-output">3</span> Row <span class="manual-row-output">H</span> Seat <span class="display-element">2</span></h2>
+
+            
+
+            
+
+            <form class="manually-form">
+
+              <label for="first-name">First Name</label>
+
+              <input type="text" id="first-name" placeholder="Enter your first name" required>
+
+              
+
+              <label for="last-name">Last Name</label>
+
+              <input type="text" id="last-name" placeholder="Enter your last name" required>
+
+              
+
+              <label for="email-or-number">Email or Mobile Number</label>
+
+              <input type="text" id="email-or-number" placeholder="Email or Mobile Number" required>
+
+              
+
+              <label for="note">Note</label>
+
+              <textarea id="note"></textarea>
+
+            </form>
+
+          </div>
+
+          <div class="manually-button">
+
+            <a href="#" class="manual-back-btn">< Back</a>
+
+            <button>Transfer <span class="manual-ticket-counts">0</span> Tickets</button>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="src/index.js"></script>
+
+    <script src="src/script.js" defer></script>
+
+</body>
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper(".swiper-container", {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                centeredSlides: true,
+                loop: false,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    520: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 15,
+                    },
+                    768: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 20,
+                    },
+                    1000: {
+                        slidesPerView: 1.4,
+                        spaceBetween: 25,
+                    },
+                },
+            });
+        });
+    </script>
+</html>

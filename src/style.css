@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+ /*   overflow: hidden;*/
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #fafafa;
+}
+    .swiper-pagination-bullet {
+
+Background-color: black;
+
+    }
+.close{
+  color: grey;
+  font-size: 35px;
+  font-weight: 300;
+}
+.heading-for-ticket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1B1F22;
+  padding: 10px 0;
+  z-index: 9999;
+  height: 60px; /* You can adjust this as needed */
+}
+.heading-for-ticket h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+.help{
+  margin-right: 6px;
+}
+section {
+    /* display: none; *
+    margin-top: 0;*/
+    width: 100%;
+}
+.swiper {
+    /* background: red; */
+    max-width: 1120px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Slightly lighter border */
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 12px 40px rgba(0, 0, 0, 0.15); /* Layered shadow for depth */
+  border-bottom: 2px solid #026BE0;
+  height: auto;
+  width: 100%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.card .wrapper {
+    width: 100%;
+    background: #026BE0;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 80%; /* card width */
+ margin-right: 12px;  /* space between cards */
+}
+.card .wrapper p.name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.1ch;
+    color: #fff;
+    background: #026BE0;
+    padding: 10px 0;
+}
+.wrapper .seat-row-sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.seat-row-sec p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+}
+.seat-row-sec p span {
+    display: inline-block;
+    margin: 2px;
+}
+.seat-row-sec p span:first-child {
+    font-weight: 300;
+}
+.seat-row-sec p span:last-child {
+    font-weight: 700;
+}
+.card .image-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 2em;
+   
+}
+.image-wrapper:before,
+.image-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-image: linear-gradient(to top, #010103, #33333300);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    /* mix-blend-mode: normal; */
+}
+.image-wrapper img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.image-wrapper .ticket-name-date {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    z-index: 1;
+}
+.ticket-name-date p.ticket-name {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.ticket-name-date p.ticket-date {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+.card .apple-wallet {
+    background: #0560C9;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 25px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    width: 80%;
+}
+.apple-wallet img {
+    display: block;
+    height: 20px;
+    width: 30px;
+}
+.card .view-details {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+.view-details a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0560C9;
+    
+}
+.card .verified {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0560C9;
+    gap: 2px;
+}
+.transfer-sell {
+    margin: 18px 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.transfer-sell a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+}
+.transfer-sell a.transfer {
+    background: #0560C9;
+}
+.transfer-sell a.sell {
+    background: #0560C9;
+}
+.swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+.swiper-navBtn {
+    display: none;
+}
+/* ========================================== */
+}
+body.card-link  .form-container {
+    bottom: -0%;
+    opacity: 1;
+}
+.form-container {
+    /* display: none; */
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    z-index: 1;
+    background: #fff;
+    overflow-y: auto;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 10px 10px 0 0;
+    padding: 16px;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.form-container input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    outline: none;
+}
+.form-container input[type="submit"] {
+    background-color: #181515;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.transfer1 {
+    height: 80%;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+body.clicked .transfer1 {
+    bottom: -0%;
+    opacity: 1;
+}
+.wrappers {
+    position: relative;
+    height: 100%;
+background: #fafafa;
+}
+.wrappers p.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    word-spacing: 1px;
+    padding: 10px;
+    line-height: 25px;
+    border-bottom: 1px solid #e4e2e2;
+}
+.wrappers p.info {
+    border: 1px solid #7e7474;
+    padding: 10px;
+    margin: 25px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    border-radius: 6px;
+    display: flex;
+    gap: 8px;
+}
+.info i {
+    font-size: 22px;
+    padding: 5px 0;
+    /* background: red; */
+}
+.wrappers .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.row li {
+    list-style-type: none;
+}
+.row .first-child {
+    display: flex;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #757474;
+}
+.row .last-child {
+    color: #979595;
+    font-weight: 300;
+}
+.row .last-child li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.last-child li img {
+}
+.wrappers .card-wrappers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 20px 5px;
+    overflow-x: hidden;
+    height: 300px;
+}
+.card-wrappers .cards {
+    height: 80px;
+    width: 80px;
+    background: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px  #f2f2f2;
+    position: relative;
+}
+.cards i {
+    font-size: 25px;
+    color: #fff;
+    background: #0560C9;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.cards.selecteds i {
+    display: block;
+}
+.cards p {
+    text-align: center;
+    background: #0560C9;
+    padding: 4px 0;
+    color: #fff;
+}
+.selected-tf{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px;
+    background: #f2f2f2;
+    font-size: 18px;
+    color: #757474;
+}
+.selected-tf .select {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 4px;
+}
+.selected-tf a {
+    text-decoration: none;
+    color: #757474;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+}
+.selected-tf .trans a{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.transfer-link.activated {
+    color: #0560C9;
+    font-weight: 500;
+}
+.transfer-link i {
+    font-size: 2rem;
+} 
+
+/* ========================================== */
+
+.parent {
+    background: #fafafa;
+    height: 80%;
+    width: 100%;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.parent.show {
+    bottom: -0%;
+    opacity: 1;
+}
+.manual-page {
+    
+}
+.manual-transfer {
+    text-align: center;
+    
+}
+
+.manual-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-bottom: 2px solid #f6f6f6;
+}
+
+.button-text {
+    margin-right: 5px;
+}
+
+.contact-button,
+.manual-button{
+
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0560C9;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    color: #0560C9;
+    font-weight: 500;
+}
+.manual-btn{
+    padding: 10px;
+}
+.manual-btn span {
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    gap: 5px;
+}
+.manual-btn span i {
+    font-size: 25px;
+}
+
+.tick-header{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+.tick-paragraph{
+    padding: 0 16px;
+    margin: 16px 0;
+}
+.bottom a{
+    text-decoration: none;
+    color: #0560C9;
+}
+.manual-buttons {
+    bottom: 0;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    padding: 18px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+.manual-buttons a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    color: #0560C9;
+}
+
+/* ========================================== */
+.new-wrapper.open  {
+    bottom: -0%;
+    opacity: 1;
+    
+}
+.new-wrapper {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: #fcfcfc;
+    z-index: 20;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    overflow: auto;
+    height: 80%;
+}
+.transfer-manually {
+    /* display: none; */
+    height: 100%;
+    
+}
+.manually-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.manually-header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+}
+    h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 300;
+}
+.manually-form {
+    margin-bottom: 20px;
+    width: 100%;
+    color: #333;
+    /* background: red; */
+}
+.manually-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.manually-form input,
+.manually-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.manually-form textarea {
+    height: 100px;
+}
+.manually-button{
+    padding: 16px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10px;
+}
+.manually-button a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #0560C9;
+}
+.manually-button button{
+    float: right;
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: #0560C9;
+}
+.manually-container {
+justify-content: center;
+margin: 14px;
+}
+.manually-container h2 {
+    color: #333;
+}
+
+.manually-container h2:first-child{
+    font-weight: 500;
+}
+.manually-container h2.manual-counts span{
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .image-wrapper img {
+        height: 160px;
+    }
+    .wrapper .seat-row-sec {
+        padding: 18px 0;
+    }
+
+.map{
+  margin: 16px;
+}
+iframe{
+  border-radius: 4px;
+}
+  .up {
+    display: flex;
+    background-color: #0056ff; /* Blue background */
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .up-btn {
+    flex: 1; /* Each takes 50% */
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    color: #c0c0c0; /* Default grey text */
+    transition: color 0.2s ease;
+  }
+
+  .up-btn span {
+    margin-left: 5px;
+  }
+
+  /* Hover effects */
+  .up-btn:hover {
+    color: white;
+  }
+
+  .up-btn:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;          /* Start at the left edge of the button */
+    width: 100%;      /* Full button width */
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+  }
+}
+
+.close{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+}
+.heading-for-ticket {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1B1F22;
+  padding: 12px 16px;
+  z-index: 9999;
+  height: 60px;
+  border-bottom: 1px solid #2c2f33;
+}
+.heading-for-ticket h1 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    flex: 1;
+}
+.help{
+  margin-right: 0;
+  font-weight: 400;
+}
+.icon {
+  width: 30px;
+}
+section {
+    width: 100%;
+    /* margin-top: 60px; */
+    padding: 0 4px;
+}
+.swiper {
+    width: 100%;
+    padding: 20px 0 10px 0;
+}
+.swiper-container {
+    padding: 0 4px;
+    overflow: visible;
+}
+.swiper-wrapper {
+    display: flex;
+}
+.card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  height: auto;
+  width: 100%; 
+  margin-bottom: 20px;
+  
+}
+
+.card .wrapper {
+    width: 100%;
+    background: #026BE0;
+    padding: 0 16px;
+}
+.swiper-slide {
+  flex-shrink: 0;
+   width: auto;
+  margin-right: -40px; /* This creates the peek effect */
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  
+}
+.swiper-slide-active {
+  transform: scale(1);
+  z-index: 2;
+}
+.swiper-slide-next {
+  z-index: 1;
+}
+.card .wrapper p.name {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: #026BE0;
+    padding: 12px 0 8px 0;
+    text-transform: uppercase;
+}
+.wrapper .seat-row-sec {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 16px 0;
+    background: #026BE0;
+}
+.seat-row-sec p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #fff;
+}
+.seat-row-sec p span {
+    display: inline-block;
+    margin: 2px 0;
+}
+.seat-row-sec p span:first-child {
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 12px;
+}
+.seat-row-sec p span:last-child {
+    font-weight: 600;
+    font-size: 16px;
+}
+.card .image-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.image-wrapper:before,
+.image-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background-image: linear-gradient(to top, #000, transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+.image-wrapper img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.image-wrapper .ticket-name-date {
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    z-index: 1;
+    padding: 0 16px;
+    text-align: center;
+}
+.ticket-name-date p.ticket-name {
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.ticket-name-date p.ticket-date {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+.ticket-date span {
+    display: inline-block;
+}
+
+.card > p {
+    width: 100%;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.card .apple-wallet {
+    background: #0560C9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    width: 90%;
+    /* border-radius: 8px; */
+}
+.apple-wallet img {
+    display: block;
+    height: 20px;
+    width: 20px;
+    filter: brightness(0) invert(1);
+}
+.card .view-details {
+    width: 100%;
+    margin: 12px 0 20px 0;
+    padding: 0 30px;
+    text-align: center;
+    
+}
+.view-details a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0560C9;
+}
+.transfer-sell {
+    margin: 20px 0;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.transfer-sell a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: 48%;
+    padding: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    /* border: 1px solid #0560C9; */
+    background: #0560C9;
+}
+.transfer-sell a.transfer {
+    background: #0560C9;
+    color: #fff;
+}
+.transfer-sell a.sell {
+    background: #0560C9;
+    color: #fff;
+}
+.swiper-navBtn {
+    display: none;
+}
+
+/* Improved Tabs styling */
+/* Tabs styling - make them span full width */
+.up {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+
+/* Map styling */
+.map{
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+iframe{
+  border-radius: 8px;
+  height: 200px;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .image-wrapper img {
+        height: 140px;
+    }
+    .wrapper .seat-row-sec {
+        padding: 10px 0;
+    }
+    .card .wrapper p.name {
+        font-size: 13px;
+    }
+    .seat-row-sec p span:first-child {
+        font-size: 11px;
+    }
+    .seat-row-sec p span:last-child {
+        font-size: 15px;
+    }
+    .ticket-name-date p.ticket-name {
+        font-size: 15px;
+    }
+    .ticket-name-date p.ticket-date {
+        font-size: 12px;
+    }
+    .transfer-sell a {
+        font-size: 15px;
+        padding: 12px;
+    }
+    .swiper-slide {
+        width: 85%;
+        margin-right: -30px;
+    }
+}
+
+/* Ensure the active card is fully visible */
+.swiper-slide-active .card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabs styling - make them span full width */
+.up {
+    display: flex;
+    background-color: #026BE0;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.up-btn {
+    flex: 1; /* This makes them equally share the width */
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+.up-btn:first-child {
+    color: #fff;
+}
+
+.up-btn:first-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.up2{
+    color: #cac6c6;
+}
+.help-icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.iconarea{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
