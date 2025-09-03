@@ -26,7 +26,7 @@ Background-color: black;
   font-weight: 300;
 }
 .heading-for-ticket {
-  position: fixed;
+  position: relative;
 /*   top: 0; */
   left: 0;
   width: 100%;
@@ -1036,6 +1036,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
