@@ -185,14 +185,7 @@ section {
     background: #0560C9;
     gap: 2px;
 }
-.transfer-sell {
-    margin: 18px 0;
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+
 .transfer-sell a {
     text-decoration: none;
     font-size: 12px;
@@ -726,7 +719,7 @@ iframe{
   border: 1px solid #e0e0e0;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 /*   height: auto; */
-     height: 450px;
+     height: 470px;
   width: 90%; 
 }
 
@@ -1032,6 +1025,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
