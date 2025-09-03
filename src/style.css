@@ -728,7 +728,7 @@ iframe{
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 /*   height: auto; */
      height: 450px;
-  width: 100%; 
+  width: 90%; 
 }
 
 .card .wrapper {
@@ -1031,6 +1031,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
