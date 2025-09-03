@@ -8,16 +8,11 @@
 }
 
 body {
-  min-height: 100vh; /* ensure body fills the viewport */
-  margin: 0;         /* reset default browser margin */
-  
-  /* Safe area padding for iOS/Android PWAs */
-  padding-top: env(safe-area-inset-top);
-  padding-right: env(safe-area-inset-right);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-
-  background: #fafafa;
+   overflow: hidden;
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #fafafa;
 }
 
     .swiper-pagination-bullet {
@@ -1041,6 +1036,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
