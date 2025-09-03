@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1.2, // Shows full slide + peek of next
-    spaceBetween: 12,
+    spaceBetween: 10,
     loop: false,
     centeredSlides: false,
     grabCursor: true,
@@ -350,3 +350,4 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
+
