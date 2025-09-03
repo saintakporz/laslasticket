@@ -51,8 +51,8 @@ Background-color: black;
   margin-right: 6px;
 }
 section {
-    /* display: none; *
-    margin-top: 0;*/
+    /* display: none; **/
+    margin-top: 0;
     width: 100%;
 }
 .swiper {
@@ -1060,6 +1060,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
