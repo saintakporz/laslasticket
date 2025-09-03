@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 section {
     /* display: none; *
     margin-top: 0;*/
-    padding: 0 4px;
+    padding-left: 4px;
     width: 100%;
 }
 /* .swiper {
@@ -1039,6 +1039,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
