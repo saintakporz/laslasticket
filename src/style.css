@@ -748,6 +748,7 @@ iframe{
 .swiper-slide-active {
   transform: scale(1);
   z-index: 2;
+ margin-right: 10px;
 }
 .swiper-slide-next {
   z-index: 1;
@@ -1031,6 +1032,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
