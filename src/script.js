@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper-container", {
     slidesPerView: 1.2, // Shows full slide + peek of next
-    spaceBetween: 20,
+    spaceBetween: 12,
     loop: false,
     centeredSlides: false,
     grabCursor: true,
@@ -346,6 +346,7 @@ window.addEventListener('DOMContentLoaded', function() {
         createSlides(slideCount);
     }
 });
+
 
 
 console.log(gateOutput);
