@@ -744,7 +744,7 @@ iframe{
 .swiper-wrapper {
     display: flex;
 }
-.card {
+/* .card {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -757,7 +757,7 @@ iframe{
   width: 100%; 
   margin-bottom: 20px;
   
-}
+} */
 
 .card .wrapper {
     width: 100%;
@@ -1057,6 +1057,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
