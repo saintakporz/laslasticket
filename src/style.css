@@ -10,16 +10,16 @@
 body {
    overflow: auto;
 /*     min-height: 100vh; */
+    -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     background: #fafafa;
 }
 
-    .swiper-pagination-bullet {
-
-Background-color: black;
-
-    }
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 .close{
   color: grey;
   font-size: 35px;
@@ -1036,6 +1036,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
