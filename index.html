@@ -185,25 +185,25 @@
         </div>
 
         <div class="transfer-sell">
-          <style>
+        <style>
 /* Reset Swiper's default pagination positioning */
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: auto !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
+  bottom: unset !important;
+  top: unset !important;
+  left: unset !important;
+  right: unset !important;
   width: auto !important;
   transform: none !important;
-  text-align: initial !important;
+  text-align: unset !important;
 }
 
 /* Reset dynamic bullets */
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  left: auto !important;
+  left: unset !important;
   transform: none !important;
   white-space: normal !important;
   overflow: visible !important;
@@ -211,16 +211,19 @@
 
 /* Your custom pagination placement */
 .swiper-pagination {
-  position: absolute;   /* or relative, depending on parent */
-  bottom: 30px;         /* change as needed */
-  left: 20px;           /* change as needed */
+  position: absolute;     /* can also be relative if inside a wrapper */
+  bottom: 30px;           /* distance from bottom of swiper */
+  left: 20px;             /* distance from left */
   width: auto !important;
   text-align: left;
-   margin-bottom: 20px;
 }
 
+/* Ensure spacing below if needed */
+.swiper-pagination {
+  margin-bottom: 20px;    /* extra space below dots if not absolute */
+}
+</style>
 
-          </style>
  <div class="swiper-pagination"></div>
         
             <a class="transfer" href="#">Transfer</a>
