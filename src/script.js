@@ -8,7 +8,7 @@ var swiper = new Swiper(".swiper-container", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets: true,
+        dynamicBullets: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -350,4 +350,5 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
+
 
