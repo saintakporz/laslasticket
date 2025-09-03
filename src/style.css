@@ -757,7 +757,6 @@ iframe{
   height: auto;
   width: 100%; 
   margin-bottom: 20px;
-  margin: 0;
 }
 
 .card .wrapper {
@@ -1058,6 +1057,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
