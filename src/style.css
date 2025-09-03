@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
 }
 section {
     width: 100%;
+    padding: 0 4px;
 }
 
 .card .wrapper {
@@ -1030,6 +1031,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
