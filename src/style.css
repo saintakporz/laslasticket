@@ -748,7 +748,8 @@ iframe{
 .swiper-slide-active {
   transform: scale(1);
   z-index: 2;
- margin-right: 10px;
+ margin-right: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .swiper-slide-next {
   z-index: 1;
@@ -979,10 +980,10 @@ iframe{
     }
 }
 
-/* Ensure the active card is fully visible */
+/* Ensure the active card is fully visible 
 .swiper-slide-active .card {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
+}*/
 
 /* Tabs styling - make them span full width */
 .up {
@@ -1032,6 +1033,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
