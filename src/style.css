@@ -8,8 +8,8 @@
 }
 
 body {
-   overflow: hidden;
-/*     min-height: 100vh; */
+   overflow: auto;
+    min-height: 100vh;
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     background: #fafafa;
@@ -1036,6 +1036,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
