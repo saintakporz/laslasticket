@@ -75,7 +75,7 @@ section {
     0 12px 40px rgba(0, 0, 0, 0.15); /* Layered shadow for depth */
   border-bottom: 2px solid #026BE0;
 /*   height: auto; */
-     height: 300px;
+     height: 600px;
   width: 100%;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -1057,6 +1057,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
