@@ -8,16 +8,18 @@
 }
 
 body {
- /*   overflow: hidden;*/
-/*    min-height: 100%;
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom); */
- padding-top: env(safe-area-inset-top);
-  padding-left: env(safe-area-inset-left);
+  min-height: 100vh; /* ensure body fills the viewport */
+  margin: 0;         /* reset default browser margin */
+  
+  /* Safe area padding for iOS/Android PWAs */
+  padding-top: env(safe-area-inset-top);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
-    background: #fafafa;
+  padding-left: env(safe-area-inset-left);
+
+  background: #fafafa;
 }
+
     .swiper-pagination-bullet {
 
 Background-color: black;
@@ -1039,6 +1041,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
