@@ -184,15 +184,15 @@
 
         </div>
 <div>
-  <style>
-/* 🔹 Reset ALL default Swiper pagination positioning */
+ <style>
+/* Reset Swiper's pagination defaults */
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction,
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  position: static !important;  /* remove absolute centering */
+  position: static !important;
   bottom: unset !important;
   top: unset !important;
   left: unset !important;
@@ -204,32 +204,33 @@
   overflow: visible !important;
 }
 
-/* 🔹 Your custom placement */
+/* ✅ Centered pagination */
 .swiper-pagination {
-  position: absolute;  /* change to relative if you want it in normal flow */
-  bottom: 30px;        /* distance from bottom of swiper */
-  left: 20px;          /* distance from left edge */
-  width: auto !important;
-  text-align: left;
-  margin-bottom: 0;    /* margin won't affect absolute elements */
+  position: relative;       /* relative so margin works */
+  display: flex;            /* use flexbox */
+  justify-content: center;  /* center horizontally */
+  margin: 20px auto 0;      /* top margin to push it down */
+  width: 100%;              /* full width for centering */
 }
 
-/* 🔹 Keep bullets consistent size */
+/* ✅ Bullet styles */
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background: #ccc;
   opacity: 1;
-  margin: 0 4px;
+  margin: 0 6px;
+  border-radius: 50%;
 }
 
 .swiper-pagination-bullet-active {
-  background: #0056ff; /* highlight active */
+  background: #0056ff;
 }
 </style>
 
-<!-- 🔹 Place pagination exactly where you want it -->
+<!-- Place pagination where you want it -->
 <div class="swiper-pagination"></div>
+
 </div>
         <div class="transfer-sell">
 
