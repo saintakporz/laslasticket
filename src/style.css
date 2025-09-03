@@ -770,6 +770,7 @@ iframe{
   margin-right: -40px; /* This creates the peek effect */
   transform: scale(0.9);
   transition: transform 0.3s ease;
+    margin-right: 10px;
   
 }
 .swiper-slide-active {
@@ -1057,6 +1058,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
