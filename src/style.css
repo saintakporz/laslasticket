@@ -59,7 +59,7 @@ section {
     /* background: red; */
     max-width: 1120px;
     width: 100%;
-    padding: 50px 0;
+/*     padding: 50px 0; */
 }
 
 .card {
@@ -1060,6 +1060,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
