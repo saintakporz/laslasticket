@@ -186,28 +186,38 @@
 
         <div class="transfer-sell">
           <style>
-/* Keep pagination where YOU place it */
+/* Reset Swiper's default pagination positioning */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: auto !important;
+  transform: none !important;
+  text-align: initial !important;
+}
+
+/* Reset dynamic bullets */
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: auto !important;
+  transform: none !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* Your custom pagination placement */
 .swiper-pagination {
-  position: absolute;   /* or relative if inside a parent */
-  bottom: 10px;         /* adjust as needed */
-  left: 20px;           /* adjust as needed */
-  text-align: left;     /* align dots to the left */
-  width: auto !important; /* prevent Swiper from forcing 100% width */
+  position: absolute;   /* or relative, depending on parent */
+  bottom: 10px;         /* change as needed */
+  left: 20px;           /* change as needed */
+  width: auto !important;
+  text-align: left;
 }
 
-/* Make all dots the same size */
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: #ccc;   /* default color */
-  opacity: 1;         /* remove Swiper fade effect */
-  margin: 0 4px !important;
-}
-
-/* Active dot (same size, different color only) */
-.swiper-pagination-bullet-active {
-  background: #0056ff; /* blue for active */
-}
 
           </style>
  <div class="swiper-pagination"></div>
