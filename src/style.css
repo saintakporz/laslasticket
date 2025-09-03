@@ -896,6 +896,7 @@ iframe{
     font-size: 14px;
     font-weight: 600;
     color: #0560C9;
+    margin-bottom: 20px;
 }
 .transfer-sell {
     margin: 20px 0;
@@ -1038,6 +1039,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
