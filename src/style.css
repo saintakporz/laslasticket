@@ -19,6 +19,8 @@ body {
 
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+    width: 0 !important;   /* hide scrollbar in Chrome/Safari */
+  height: 0 !important;  /* hide horizontal scrollbar */
 }
 .close{
   color: grey;
@@ -1036,6 +1038,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
