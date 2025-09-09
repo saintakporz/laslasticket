@@ -425,14 +425,16 @@ function updateMapFromSavedLocation() {
     const savedFormData = JSON.parse(localStorage.getItem('formData'));
 
     if (savedFormData && savedFormData.location) {
+        // Always use the text from location input
         const encodedLocation = encodeURIComponent(savedFormData.location.trim());
         const mapSrc = `https://www.google.com/maps?q=${encodedLocation}&output=embed`;
         mapIframe.src = mapSrc;
-        console.log(mapSrc);
+        console.log("Map pinned to:", savedFormData.location);
     } else {
         console.warn('No saved location found in localStorage.');
     }
 }
+
 window.addEventListener('DOMContentLoaded', function() {
     displayFormDataFromLocalStorage();
     updateMapFromSavedLocation(); // <-- Add this
@@ -446,6 +448,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
+
 
 
 
