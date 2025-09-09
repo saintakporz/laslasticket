@@ -599,7 +599,7 @@ background: #fafafa;
 }
 .manually-container {
 justify-content: center;
-margin: 14px;
+margin: 14px 14px 4px 14px;
 }
 .manually-container h2 {
     color: #333;
@@ -1025,6 +1025,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
