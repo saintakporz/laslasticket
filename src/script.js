@@ -176,7 +176,7 @@ function displayFormDataFromLocalStorage() {
     }
 }
 
-function createSlides(count) {
+/*function createSlides(count) {
     swiper.removeAllSlides();
     for ( var i = 0; i < count; i++) {
       var clonedSlide = originalSlide.cloneNode(true);
@@ -276,7 +276,102 @@ function createSlides(count) {
         slideCount.textContent = count;
     var slideCount = document.querySelector('.ticket-count2');
         slideCount.textContent = count;
+}*/
+function createSlides(count) {
+    swiper.removeAllSlides();
+
+    // ✅ Clear existing cards before adding new ones
+    document.querySelector('.card-wrappers').innerHTML = '';
+
+    for (var i = 0; i < count; i++) {
+        var clonedSlide = originalSlide.cloneNode(true);
+        swiperWrapper.appendChild(clonedSlide);
+
+        var cardContainer = document.querySelector('.card-wrappers');
+        const savedFormData = JSON.parse(localStorage.getItem('formData'));
+        let storedSeat = savedFormData.seat;
+        let seatValue = storedSeat !== null ? storedSeat : '';
+        let incrementedSeatValue = seatValue === '-' ? '-' : parseInt(seatValue) + i;
+
+        var targetedSpan = clonedSlide.querySelector('.seat-output');
+        targetedSpan.textContent = incrementedSeatValue;
+
+        // ✅ Create card and attach once
+        var card = document.createElement('div');
+        card.className = 'cards';
+
+        var paragraph = document.createElement('p');
+        var seatSpan = document.createElement('span');
+        seatSpan.className = 'seat';
+        seatSpan.textContent = incrementedSeatValue;
+
+        var icon = document.createElement('i');
+        icon.className = 'bx bx-check';
+
+        paragraph.appendChild(seatSpan);
+        card.appendChild(paragraph);
+        card.appendChild(icon);
+        cardContainer.appendChild(card);
+
+        // ✅ Attach event listener once per card
+        card.addEventListener('click', function () {
+            this.classList.toggle('selecteds');
+            const selectedCards = document.querySelectorAll('.cards.selecteds');
+            const selectedCount = selectedCards.length;
+            document.querySelector('.selected').textContent = selectedCount;
+            document.querySelector('.manual-ticket-count').textContent = selectedCount;
+            document.querySelector('.manual-ticket-counts').textContent = selectedCount;
+
+            const icon = this.querySelector('i');
+            icon.style.display = this.classList.contains('selecteds') ? 'block' : 'none';
+
+            const link = document.querySelector('.transfer-link');
+            if (selectedCount >= 1) {
+                link.classList.add('activated');
+                link.setAttribute('href', '#');
+            } else {
+                link.classList.remove('activated');
+                link.removeAttribute('href');
+            }
+        });
+
+        // ✅ Track selected seats cleanly
+        const displayElement = document.querySelector('.display-element');
+        const seat = seatSpan.textContent;
+        card.addEventListener('click', function () {
+            const selectedCards = document.querySelectorAll('.cards.selecteds');
+            const selectedSeats = Array.from(selectedCards).map(c => c.querySelector('.seat').textContent);
+            displayElement.textContent = selectedSeats.join(', ');
+        });
+
+        // ✅ Card link toggle
+        let isActive = false;
+        const cardLink = clonedSlide.querySelector('.card-link');
+        cardLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            isActive = !isActive;
+            if (isActive) {
+                body.classList.add('card-link');
+                document.addEventListener('click', handleCardLinks);
+            } else {
+                document.removeEventListener('click', handleCardLinks);
+            }
+        });
+
+        function handleCardLinks(event) {
+            if (!formContainer.contains(event.target) && event.target !== cardLink) {
+                isActive = false;
+                body.classList.remove('card-link');
+                document.removeEventListener('click', handleCardLinks);
+            }
+        }
+    }
+
+    swiper.update();
+    document.querySelector('.ticket-count').textContent = count;
+    document.querySelector('.ticket-count2').textContent = count;
 }
+
 var link = document.querySelector('.transfer-link');
     link.addEventListener('click', function(event) {
             event.stopPropagation();
@@ -351,6 +446,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
+
 
 
 
