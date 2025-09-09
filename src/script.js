@@ -350,5 +350,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
+console.log(mapSrc);
+
 
 
