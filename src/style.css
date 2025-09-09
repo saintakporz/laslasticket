@@ -581,6 +581,7 @@ background: #fafafa;
     align-items: center;
     justify-content: space-between;
     padding: 18px 10px;
+   margin-bottom: 0;
 }
 .manually-button a {
     text-decoration: none;
@@ -1024,6 +1025,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
