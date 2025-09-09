@@ -754,7 +754,6 @@ iframe{
     color: #fff;
     background: #026BE0;
     padding: 12px 0 8px 0;
-    text-transform: uppercase;
 }
 .wrapper .seat-row-sec {
     display: flex;
@@ -1025,6 +1024,7 @@ iframe{
     align-content: center;
     justify-content: space-between;
 }
+
 
 
 
