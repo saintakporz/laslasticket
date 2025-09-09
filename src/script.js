@@ -333,6 +333,7 @@ function updateMapFromSavedLocation() {
         const encodedLocation = encodeURIComponent(savedFormData.location.trim());
         const mapSrc = `https://www.google.com/maps?q=${encodedLocation}&output=embed`;
         mapIframe.src = mapSrc;
+        console.log(mapSrc);
     } else {
         console.warn('No saved location found in localStorage.');
     }
@@ -350,7 +351,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 console.log(gateOutput);
-console.log(mapSrc);
+
+
 
 
 
